@@ -9,7 +9,7 @@ public interface IHit
 }
 public class PlayerController : MonoBehaviour, IHit
 {
-    public float moveDistance = 1;
+    public float moveDistance = 2;
     private Vector3 moveValue;
     private Vector3 curPos;
 
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour, IHit
     public void Move(InputAction.CallbackContext context)
     {
         Vector3 input = context.ReadValue<Vector3>();
-
+        Debug.Log($"input : {context}");
         if (input.magnitude > 1f) return; //입력받은 값이 1보다 높으면 실행안함 (대각선으로 움직이려할때 막는 것)
 
         if (context.performed)  //수행됐는지 체크
