@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class Manager : MonoBehaviour
 {
     public int levelCount = 50;
-    public Camera camera = null;
+    public Camera mainCamera = null;
     public LevelGenerator levelGenerator = null;
 
     private int currentCoins = 0;

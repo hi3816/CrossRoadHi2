@@ -62,6 +62,7 @@ public class Spawner : MonoBehaviour
         if (!useSpawnPlacement) //스폰이 한번만 되는거라면
         {
             obj.GetComponent<Mover>().speed = speed;
+            obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(0, direction, 0);
         }
     }
 
