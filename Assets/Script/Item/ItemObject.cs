@@ -5,13 +5,13 @@ using UnityEngine;
 public class ItemObject : MonoBehaviour
 {
     public int id;
-    public GameObject preofab;
+    public GameObject prefab;
 
     private void Update()
     {
         if (transform.position.x < -25f || transform.position.x > 25f)
         {
-            Manager.Instance.ReturnObject(preofab, id);
+            Manager.Instance.ReturnObject(prefab, id);
         }
     }
 }
