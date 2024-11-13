@@ -11,6 +11,19 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        
+        Manager.Instance.coins += UpdateConinCount;
+        Manager.Instance.distance += UpdateDistance;
     }
+
+    private void UpdateConinCount(int value)
+    { 
+        coin.text = value.ToString();
+    }
+
+    private void UpdateDistance(int value)
+    {
+        distance.text = value.ToString();
+    }
+
+
 }

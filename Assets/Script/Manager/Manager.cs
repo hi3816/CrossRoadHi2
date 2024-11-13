@@ -17,6 +17,8 @@ public class Manager : MonoBehaviour
     private int currentCoins = 0;
     private int currentDistance = 0;
     public bool canPlay = false;
+    private AudioSource effect;
+    private AudioClip clip = null;
 
     public event Action<int> coins;
     public event Action<int> distance;
@@ -55,6 +57,8 @@ public class Manager : MonoBehaviour
     }
     private void Start()
     {
+        effect = GetComponent<AudioSource>();
+        clip = effect.clip;
         for (int i = 0; i < levelCount; i++)
         {
             levelGenerator.RandomGenerator();
@@ -64,7 +68,14 @@ public class Manager : MonoBehaviour
     public void UpdateConinCount()
     {
         currentCoins++;
+        effect.PlayOneShot(clip);
         coins?.Invoke(currentCoins);
+    }
+
+    public void UpdateDistanceCount()
+    {
+        currentDistance++;
+        distance?.Invoke(currentDistance);
     }
     public GameObject SpawnFromPool(int id)
     {

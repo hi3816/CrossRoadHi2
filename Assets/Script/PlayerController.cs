@@ -9,7 +9,7 @@ public interface IHit
 }
 public class PlayerController : MonoBehaviour, IHit
 {
-    public float moveDistance = 2;
+    public float moveDistance = 1;
     private Vector3 moveValue;
     private Vector3 curPos;
 
@@ -48,11 +48,24 @@ public class PlayerController : MonoBehaviour, IHit
 
     void Moving(Vector3 pos)
     {
-        transform.DOMove(pos, 0.4f).SetEase(Ease.Linear);
+        transform.DOMove(pos, 0.4f).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            //콜백함수
+            if (pos.z > curPos.z)
+            {
+                SetMoveForwardState();
+            }
+        });
     }
 
     void Rotate(Vector3 pos)
     {
         capsule.rotation = Quaternion.Euler(0, pos.x * 90, 0);
+    }
+
+    void SetMoveForwardState()
+    {
+        Manager.Instance.UpdateDistanceCount();
+        curPos = transform.position;
     }
 }
