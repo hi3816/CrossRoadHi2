@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26970eeed42179346b4b19a41f8585d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinValue: 1
 --- !u!114 &3226593619696965576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
-  preofab: {fileID: 172592}
+  prefab: {fileID: 172592}
 --- !u!1 &187180
 GameObject:
   m_ObjectHideFlags: 0

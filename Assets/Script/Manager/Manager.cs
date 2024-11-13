@@ -29,7 +29,7 @@ public class Manager : MonoBehaviour
     {
         get 
         {
-            if (s_Instance = null)
+            if (s_Instance == null)
             {
                 s_Instance = FindObjectOfType(typeof(Manager)) as Manager;
             }
@@ -51,6 +51,13 @@ public class Manager : MonoBehaviour
                 poolObject.Enqueue(obj);
             }
             poolDict.Add(pool.id, poolObject);
+        }
+    }
+    private void Start()
+    {
+        for (int i = 0; i < levelCount; i++)
+        {
+            levelGenerator.RandomGenerator();
         }
     }
 
@@ -88,13 +95,7 @@ public class Manager : MonoBehaviour
         poolDict[id].Enqueue(obj);
     }
 
-    private void Start()
-    {
-        for (int i = 0; i < levelCount; i++)
-        {
-            levelGenerator.RandomGenerator();
-        }
-    }
+    
 
     public bool CanPlay()
     {

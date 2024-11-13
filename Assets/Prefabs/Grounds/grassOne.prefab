@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 422240}
-  - component: {fileID: 11403398}
+  - component: {fileID: 3223016290896989471}
   m_Layer: 0
   m_Name: coinController
   m_TagString: Untagged
@@ -24,16 +24,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112722}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 482508}
   - {fileID: 404310}
   m_Father: {fileID: 449742}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11403398
+--- !u!114 &3223016290896989471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 112722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5d8ccbb92747f19ed0a8704554f94, type: 3}
+  m_Script: {fileID: 11500000, guid: 3da950299cf0f96469bc302e546c14ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goLeft: 0
@@ -50,9 +51,9 @@ MonoBehaviour:
   items:
   - {fileID: 172592, guid: 1b0c627b7b492e54fb7244fdb0038d88, type: 3}
   spawnersLeft:
-  - {fileID: 11416548}
+  - {fileID: 4190267770279660575}
   spawnersRight:
-  - {fileID: 11461614}
+  - {fileID: 2008248947402057580}
 --- !u!1 &139162
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,14 +80,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139162}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 50, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 487804}
   - {fileID: 422240}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3326230
 MeshFilter:
@@ -104,9 +106,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139162}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2391826
@@ -120,9 +130,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -134,6 +147,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -146,6 +160,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &159378
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404440}
-  - component: {fileID: 11423390}
+  - component: {fileID: 8043326964048018291}
   m_Layer: 0
   m_Name: spawnRight
   m_TagString: Untagged
@@ -170,14 +185,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159378}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 487804}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11423390
+--- !u!114 &8043326964048018291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,18 +202,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 159378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2c90e18f8c64f62a32e6065fac42d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 97757bff95e5f7740ad2f971e6a2ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {fileID: 404440}
-  delayMin: 1.5
-  delayMax: 5
+  dealayMin: 1.5
+  dealayMax: 5
   speedMin: 1
-  speedMax: 3
-  useSpawnPlacement: 1
-  spawnCountMin: 12
-  spawnCountMax: 24
-  item: {fileID: 0}
+  speedMax: 4
+  useSpawnPlacement: 0
+  spawnCount: 4
+  Item: {fileID: 0}
   goLeft: 0
   spawnLeftPos: 0
   spawnRightPos: 0
@@ -210,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 487804}
-  - component: {fileID: 11448254}
+  - component: {fileID: 1503438139202239096}
   m_Layer: 0
   m_Name: spawnController
   m_TagString: Untagged
@@ -225,16 +240,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175248}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 466870}
   - {fileID: 404440}
   m_Father: {fileID: 449742}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11448254
+--- !u!114 &1503438139202239096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,7 +259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 175248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5d8ccbb92747f19ed0a8704554f94, type: 3}
+  m_Script: {fileID: 11500000, guid: 3da950299cf0f96469bc302e546c14ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goLeft: 0
@@ -253,9 +269,9 @@ MonoBehaviour:
   - {fileID: 104532, guid: e88d753d0943c0b49b581a77769253b7, type: 3}
   - {fileID: 176378, guid: f770b16cc89e37e4386488baf04a1ca0, type: 3}
   spawnersLeft:
-  - {fileID: 11419342}
+  - {fileID: 7651351431285589256}
   spawnersRight:
-  - {fileID: 11423390}
+  - {fileID: 8043326964048018291}
 --- !u!1 &189126
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404310}
-  - component: {fileID: 11461614}
+  - component: {fileID: 2008248947402057580}
   m_Layer: 0
   m_Name: spawnRight
   m_TagString: Untagged
@@ -280,14 +296,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189126}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 422240}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11461614
+--- !u!114 &2008248947402057580
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,18 +313,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 189126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2c90e18f8c64f62a32e6065fac42d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 97757bff95e5f7740ad2f971e6a2ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {fileID: 404310}
-  delayMin: 1.5
-  delayMax: 5
+  dealayMin: 1.5
+  dealayMax: 5
   speedMin: 1
   speedMax: 4
   useSpawnPlacement: 1
-  spawnCountMin: 2
-  spawnCountMax: 6
-  item: {fileID: 0}
+  spawnCount: 4
+  Item: {fileID: 0}
   goLeft: 0
   spawnLeftPos: 0
   spawnRightPos: 0
@@ -320,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482508}
-  - component: {fileID: 11416548}
+  - component: {fileID: 4190267770279660575}
   m_Layer: 0
   m_Name: spawnLeft
   m_TagString: Untagged
@@ -335,14 +351,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194022}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 422240}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11416548
+--- !u!114 &4190267770279660575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,18 +368,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 194022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2c90e18f8c64f62a32e6065fac42d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 97757bff95e5f7740ad2f971e6a2ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {fileID: 482508}
-  delayMin: 1.5
-  delayMax: 5
+  dealayMin: 1.5
+  dealayMax: 5
   speedMin: 1
   speedMax: 4
   useSpawnPlacement: 1
-  spawnCountMin: 2
-  spawnCountMax: 6
-  item: {fileID: 0}
+  spawnCount: 4
+  Item: {fileID: 0}
   goLeft: 0
   spawnLeftPos: 0
   spawnRightPos: 0
@@ -375,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466870}
-  - component: {fileID: 11419342}
+  - component: {fileID: 7651351431285589256}
   m_Layer: 0
   m_Name: spawnLeft
   m_TagString: Untagged
@@ -390,14 +406,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199598}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 487804}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11419342
+--- !u!114 &7651351431285589256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,18 +423,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 199598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2c90e18f8c64f62a32e6065fac42d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 97757bff95e5f7740ad2f971e6a2ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {fileID: 466870}
-  delayMin: 1.5
-  delayMax: 5
+  dealayMin: 1.5
+  dealayMax: 5
   speedMin: 1
-  speedMax: 3
-  useSpawnPlacement: 1
-  spawnCountMin: 12
-  spawnCountMax: 24
-  item: {fileID: 0}
+  speedMax: 4
+  useSpawnPlacement: 0
+  spawnCount: 4
+  Item: {fileID: 0}
   goLeft: 0
   spawnLeftPos: 0
   spawnRightPos: 0

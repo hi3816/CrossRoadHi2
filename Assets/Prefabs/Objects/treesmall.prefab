@@ -119,4 +119,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 25
-  preofab: {fileID: 119080}
+  prefab: {fileID: 119080}

@@ -929,6 +929,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1022,6 +1023,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be02b58739be264b89d0b6ca64fa4f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b1c36fed42b6c4eb121eef676d9277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoMove: 0
+  player: {fileID: 1714541302}
+  speed: 0.25
+  offset: {x: 5, y: 7, z: -4}
 --- !u!1 &1012970570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,11 +1976,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform:
   - {fileID: 139162, guid: ce982e585b9788144ba6154129f84b06, type: 3}
-  - {fileID: 127870, guid: a9a9860f534b42d499243b587e3b3e03, type: 3}
-  - {fileID: 135800, guid: 82d9c4adfc0d40b49ad4a7dd0b298b9a, type: 3}
-  - {fileID: 160302, guid: 73c5604e817fc0a44a46505ca4499d3a, type: 3}
-  - {fileID: 173304, guid: d73cba9fda67c514a9f5de55b68877ab, type: 3}
-  - {fileID: 139206, guid: 508940e8e0a497243b7dc9f78fc61cf8, type: 3}
   height:
   - -0.5
   - -0.5
@@ -2073,9 +2085,10 @@ MonoBehaviour:
   levelGenerator: {fileID: 1801752209}
   canPlay: 0
   pools:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 851964427, guid: 39a7e941a64fb034caae3c6c80804ffc, type: 3}
+  - {fileID: 3713081794839849118, guid: 41387607d4f8d9e44a9e813c776943d4, type: 3}
+  - {fileID: 4315181413073721166, guid: 0ef6331534c4efe4aaa71fc281285347, type: 3}
+  - {fileID: 3226593619696965576, guid: 1b0c627b7b492e54fb7244fdb0038d88, type: 3}
 --- !u!4 &2048937722
 Transform:
   m_ObjectHideFlags: 0
